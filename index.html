@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <button class="quiz-btn">Start Quiz</button>
+    <div class="info hidden">
+      <h4>Some Rules of the Quize:</h4>
+      <p>
+        1. You will have <span class="color">20 Seconds</span> per each
+        question.
+      </p>
+      <p>2. Once you select your answer, you can't reselect.</p>
+      <p>3. You can't select any option once time gose off.</p>
+      <p>4. You can't exit from the Quiz while you're playing.</p>
+      <p>5. You'll get points on the basis of your correct answer.</p>
+      <div class="buttons">
+        <button class="exitquiz-btn">Exit Quiz</button>
+        <button class="continue-btn">Coninue</button>
+      </div>
+    </div>
+    <div class="container hidden">
+      <header>
+        <div class="title">Awesome Quiz Application</div>
+        <div class="timer">
+          <div class="time-text">Time Left:</div>
+          <div class="time-sec"></div>
+        </div>
+      </header>
+      <section>
+        <div class="question">
+          <span class="qs">What is the answer of 30 + 20 ?</span>
+        </div>
+        <div class="option-list">
+          <div class="option op1"></div>
+          <div class="option op2"></div>
+          <div class="option op3"></div>
+          <div class="option op4"></div>
+        </div>
+        <div class="ques-number">
+          <p><span class="current-ques">1</span> of 5 Question</p>
+          <button class="next-quiz">Next Quiz</button>
+        </div>
+      </section>
+    </div>
+    <section class="result hidden">
+      <p>Your total Point</p>
+      <p><span class="point">0</span> out of 5</p>
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>
